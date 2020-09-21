@@ -14,5 +14,6 @@ class TicTacToe
   def initialize
     @board = array.new(9, " ")
   end
-end  
-
+     
+  def display_board
+    puts "#{@bard[0]} | #{@board[1]} | #{@board[2]}"
