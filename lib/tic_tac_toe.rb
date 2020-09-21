@@ -93,6 +93,13 @@ class TicTacToe
 end
   
   
+  def full?
+    @board.all? {|index| index == "X" || index == "0"}
+  end
+  
+  def draw?
+    @board
+  
   
   
   
