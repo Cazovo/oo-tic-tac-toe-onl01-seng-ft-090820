@@ -17,3 +17,4 @@ class TicTacToe
      
   def display_board
     puts "#{@bard[0]} | #{@board[1]} | #{@board[2]}"
+    
