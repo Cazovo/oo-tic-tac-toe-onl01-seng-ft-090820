@@ -54,7 +54,7 @@ class TicTacToe
     if num_turns% 2 == 0
       player = "X" 
     else
-      player = "0"
+      player = "O"
     end
     return player  
   end
@@ -94,7 +94,7 @@ end
   
   
   def full?
-    @board.all? {|index| index == "X" || index == "0"}
+    @board.all? {|index| index == "X" || index == "O"}
   end
   
   def draw?
@@ -114,8 +114,18 @@ end
   end
   
   
-  def
-  
+  def winner
+    index = []
+    index = won?
+    if index == false
+      return nil
+    else 
+      if @board[index[0]] == "X"
+        return "X"
+      else
+        return "O"
+    end
+    
   
   
   
