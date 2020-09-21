@@ -124,8 +124,22 @@ end
         return "X"
       else
         return "O"
+      end
     end
-    
+  end
+  
+  def play
+    until over? == true
+      turn
+    end
+    if won?
+      puts "Congragulations #{winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
+  end
+end  
+  
   
   
   
